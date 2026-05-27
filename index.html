@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Catálogo simples de livros com cadastro, upload de capa e detalhes.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookZone - Catálogo de Livros</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topo">
+  <div class="logo">Book<span>Zone</span></div>
+
+  <nav class="menu">
+    <a href="#livros">Livros</a>
+    <a href="#mangas">Mangás</a>
+    <a href="#cadastro">Cadastrar</a>
+    <a href="#detalhes">Detalhes</a>
+  </nav>
+</header>
+
+<section class="barra-busca">
+  <input type="text" id="busca" placeholder="Pesquisar livros..." aria-label="Pesquisar livros">
+  <button>Buscar</button>
+</section>
+
+<main>
+  <section class="banner">
+    <h1>Catálogo de Livros</h1>
+    <p>Cadastre livros, envie capas e visualize os detalhes.</p>
+  </section>
+
+  <section id="livros" class="secao">
+    <h2>Livros disponíveis</h2>
+
+    <ul class="categorias">
+      <li>Literatura</li>
+      <li>Fantasia</li>
+      <li>Ficção</li>
+      <li>Romance</li>
+    </ul>
+
+    <div id="listaLivros" class="grid-livros"></div>
+  </section>
+
+<section id="mangas" class="secao mangas">
+  <h2>Área de Mangás</h2>
+  <p class="subtitulo-manga">Uma seleção especial inspirada na cultura japonesa.</p>
+
+  <div id="listaMangas" class="grid-livros"></div>
+</section>
+
+
+  </div>
+</section>
+
+  <section id="cadastro" class="secao cadastro">
+    <h2>Cadastrar novo livro</h2>
+
+    <form id="formLivro">
+    
+        
+        <label for="tipo">Tipo:</label>
+<select id="tipo" required>
+  <option value="livro">Livro</option>
+  <option value="manga">Mangá</option>
+</select>
+
+      <label for="titulo">Título do livro:</label>
+      <input type="text" id="titulo" required placeholder="Digite o título">
+
+      <label for="autor">Autor:</label>
+      <input type="text" id="autor" required placeholder="Digite o autor">
+
+      <label for="preco">Preço:</label>
+<input 
+  type="number"
+  id="preco"
+  required
+  min="0"
+  step="0.01"
+  placeholder="Ex: 29.90">
+
+      <label for="categoria">Categoria:</label>
+      <input type="text" id="categoria" required placeholder="Ex: Fantasia">
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" required placeholder="Digite uma descrição do livro"></textarea>
+
+      <label for="capa">Capa do livro:</label>
+      <input type="file" id="capa" accept="image/*" required>
+
+      <button type="submit">Cadastrar livro</button>
+    </form>
+  </section>
+
+  <section id="detalhes" class="secao detalhes">
+    <h2>Detalhe do Livro</h2>
+
+    <div class="detalhe-box">
+      <img id="detalheImagem" src="https://via.placeholder.com/180x260" alt="Capa do livro selecionado">
+
+      <div>
+        <h3 id="detalheTitulo">Selecione um livro</h3>
+        <p><strong>Autor:</strong> <span id="detalheAutor">---</span></p>
+        <p><strong>Categoria:</strong> <span id="detalheCategoria">---</span></p>
+        <p><strong>Preço:</strong> <span id="detalhePreco">---</span></p>
+        <p><strong>Descrição:</strong> <span id="detalheDescricao">Clique em "Ver detalhes" em algum livro.</span></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 BookZone - Catálogo de Livros</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
