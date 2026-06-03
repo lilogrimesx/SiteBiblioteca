@@ -42,7 +42,7 @@ let mangas = [
     autor: "Masashi Kishimoto",
     preco: "R$ 34,90",
     categoria: "Shounen",
-    descricao: "A jornada de Naruto Uzumaki para se tornar Hokage.",
+    descricao: "Uma história de um jovem feiticeiro chamado Itadori Yuji",
     capa: "https://m.media-amazon.com/images/I/81s+jxE5KEL._SY466_.jpg"
   },
   {
