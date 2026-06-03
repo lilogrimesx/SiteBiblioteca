@@ -255,8 +255,13 @@ footer {
 /* ÁREA DOS MANGÁS */
 /* ========================= */
 
-.mangas {
-  background: linear-gradient(135deg, #1a0f2b, #3b0a45, #8b0038);
+  .mangas {
+  background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("s-l1200.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   border-top: 5px solid #ff2e63;
   border-bottom: 5px solid #ffbd39;
